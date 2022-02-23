@@ -5,18 +5,18 @@
 
 .background {
   width: 100%;
-  height: 100%;
+  
   background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
     url("4b0ea8b31d64f25821c381e376ea6901.jpg");
   background-position: center;
-  background-size: cover;
+  background-size: auto;
   position: absolute;
 }
 
 .contentForm {
   border: 3px solid;
   width: 1250px;
-  height: 600px;
+  
   margin: 3% auto;
   display: flex;
   flex-wrap: wrap;
