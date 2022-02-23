@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../public/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="background">
+      <div class="formBox">
+        <div class="buttonBox">
+          <div id="btn"></div>
+          <button type="button" class="toggleBtn" onclick="login()">
+            로그인
+          </button>
+          <button type="button" class="toggleBtn" onclick="register()">
+            회원가입
+          </button>
+        </div>
+
+        <form id="loginForm" class="inputGroup" action="/login" method="post">
+          <input
+            name="userId"
+            type="text"
+            class="inputField"
+            placeholder="User ID"
+            required
+          />
+          <input
+            name="userPw"
+            type="password"
+            class="inputField"
+            placeholder="User PW"
+            required
+          />
+          <input type="checkbox" class="checkbox" name="checkbox" />
+          <label for="checkbox">비밀번호를 기억하겠습니다.</label>
+          <button id="loginBtn" type="submit" class="submitBtn">로그인</button>
+        </form>
+
+        <form
+          id="registerForm"
+          class="inputGroup"
+          action="/register"
+          method="POST"
+        >
+          <input
+            name="userId"
+            type="text"
+            class="inputField"
+            placeholder="User ID"
+            required
+          />
+          <input
+            name="userPw"
+            type="password"
+            class="inputField"
+            placeholder="User PW"
+            required
+          />
+          <input
+            name="userEmail"
+            type="email"
+            class="inputField"
+            placeholder="Email"
+            required
+          />
+          <input type="checkbox" class="checkbox" name="checkbox" required />
+
+          <label for="checkbox">동의</label>
+
+          <button id="registerBtn" type="submit" class="submitBtn">
+            회원가입
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="../app.js"></script>
+  </body>
+</html>
